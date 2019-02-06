@@ -32,6 +32,26 @@ var app = new Framework7({
       path: '/committees/',
       url: 'committees.html',
     },
+    {
+      path: '/icommp/',
+      url: 'committees/icommp.html',
+    },
+    {
+      path: '/osg/',
+      url: 'committees/osg.html',
+    },
+    {
+      path: '/comelec/',
+      url: 'committees/comelec.html',
+    },
+    {
+      path: '/atenews/',
+      url: 'committees/atenews.html',
+    },
+    {
+      path: '/debate_varsity/',
+      url: 'committees/adv.html',
+    },
   ],
   // ... other parameters
   theme: 'auto',

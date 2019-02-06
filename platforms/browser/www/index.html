@@ -21,6 +21,49 @@
     height: auto;
   }
 
+  .video_contain {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+  }
+  /* Style the video: 100% width and height to cover the entire window */
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+  }
+
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
   </style>
 
 </head>
@@ -36,39 +79,54 @@
       <div data-name="home" class="page color-theme-green">
 
         <!-- Top Navbar -->
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="title">Tapatan Debates 2019</div>
-          </div>
-        </div>
-
-        <!-- Scrollable page content -->
-        <div class="page-content " style="background-color:#dbdbdb">
-          <img src="img/tapatan.png" alt="Paris" class="center">
-
-          <div class="card">
-            <div class="card-header">Event Invitation</div>
-            <div class="card-content card-content-padding"><p>You are invited to watch Tapatan Debates 2019</p>
-            </div>
-            <div class="card-footer"><a href="/details/"class="link"> Click for more details</a></div>
-          </div>
-
-          <!-- <div class="card">
-            <div class="card-header">What is Tapatan Debates?</div>
-            <div class="card-content card-content-padding"><p>It is the SAMAHAN Electoral Debates. The candidates will have a live debate courtesy of iCOMMP.</p>
-            </div>
-            <div class="card-footer"><a href="#" class="link"> Click for more details</a></div>
-          </div> -->
-
-
-        </div>
+        <!-- <div class="navbar">
+        <div class="navbar-inner sliding">
+        <div class="title">Tapatan Debates 2019</div>
       </div>
+    </div> -->
+
+    <!-- Scrollable page content -->
+    <div class="page-content " style="background-color:#dbdbdb;overflow: hidden;">
+      <!-- <img src="img/tapatan.png" alt="Paris" class="center">
+
+      <div class="card">
+      <div class="card-header">Event Invitation</div>
+      <div class="card-content card-content-padding"><p>You are invited to watch Tapatan Debates 2019</p>
     </div>
+    <div class="card-footer"></div>
   </div>
-  <!-- Path to Framework7 Library JS-->
-  <script type="text/javascript" src="js/framework7.min.js"></script>
-  <!-- Path to your app js-->
-  <script type="text/javascript" src="js/my-app.js"></script>
+-->
+
+<!-- The video -->
+<div class="video_contain">
+  <video autoplay muted loop id="myVideo"><source src="img/tapatan.mp4" type="video/mp4"></video>
+  </div>
+
+
+  <!-- Optional: some overlay text to describe the video -->
+  <div class="content">
+    <h1>Special Event Invitation</h1>
+    <p>You are invited to watch Tapatan Debates 2019</p>
+    <button id="myBtn"><a href="/details/"> Click for more details</a></button>
+  </div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<!-- Path to your app js-->
+<script type="text/javascript" src="js/my-app.js"></script>
+
+<script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+</script>
 
 </body>
 </html>

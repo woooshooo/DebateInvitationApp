@@ -13,13 +13,13 @@
   <link rel="stylesheet" href="css/framework7.min.css">
 
   <style media="screen">
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      height: auto;
-    }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+  }
 
   </style>
 
@@ -28,7 +28,7 @@
   <!-- Your main view, should have "view-main" class -->
   <div class="view view-main">
     <!-- Initial Page, "data-name" contains page name -->
-    <div data-name="details" class="page color-theme-green">
+    <div data-name="details" class="page color-theme-green" style="background-color:#dbdbdb">
 
       <!-- Top Navbar -->
       <div class="navbar">
@@ -42,36 +42,54 @@
           <div class="title">Tapatan Debates 2019</div>
         </div>
       </div>
-
-
-      <!-- Scrollable page content -->
-      <div class="page-content " style="background-color:#dbdbdb">
-        <img src="img/tapatan.png" alt="Paris" class="center">
-
-        <div class="card">
-          <div class="card-header">What is Tapatan Debates?</div>
-          <div class="card-content card-content-padding"><p>It is the SAMAHAN Electoral Debates. The candidates will have a live debate courtesy of iCOMMP.</p>
-          </div>
-          <div class="card-footer"><a href="#" class="link"> Click for more details</a></div>
+      <div class="toolbar tabbar">
+        <div class="toolbar-inner">
+          <a href="#tab-1" class="tab-link tab-link-active">WHAT</a>
+          <a href="#tab-2" class="tab-link">WHEN & WHERE</a>
+          <a href="#tab-3" class="tab-link">ORGANIZERS</a>
         </div>
-
-        <div class="card">
-          <div class="card-header">When & Where is Tapatan Debates?</div>
-          <div class="card-content card-content-padding"><p>The dates will be February 8, 9, 11 and 12. Starting from 9:00am to as late as 10:30pm. \n The debates will happen in the ICOMMP Studio and will be livestreamed in Facebook. </p>
-          </div>
-          <div class="card-footer"><a href="/schedule/" class="link"> Click for more details</a></div>
-        </div>
-
-        <div class="card">
-          <div class="card-header">Who are the committees involved in the Tapatan Debates?</div>
-          <div class="card-content card-content-padding"><p>The main comittees are iCOMMP, OSG, Comelec, Atenews and ADV.</p>
-          </div>
-          <div class="card-footer"><a href="/committees/" class="link"> Click for more details</a></div>
-        </div>
-
-
       </div>
+      <!-- Scrollable page content -->
+      <div class="tabs-swipeable-wrap">
+        <div class="tabs">
+          <div id="tab-1" class="page-content tab tab-active">
+
+            <div class="card">
+              <div class="card-header">What is Tapatan Debates?</div>
+              <div class="card-content card-content-padding"><p>It is the SAMAHAN Electoral Debates. The candidates will have a live debate courtesy of iCOMMP.</p>
+              </div>
+              <div class="card-footer"><a href="#" class="link"> Click for more details</a></div>
+            </div>
+
+          </div>
+          <div id="tab-2" class="page-content tab">
+
+            <div class="card">
+              <div class="card-header">When & Where is Tapatan Debates?</div>
+              <div class="card-content card-content-padding"><p>The dates will be February 8, 9, 11 and 12. Starting from 9:00am to as late as 10:30pm. \n The debates will happen in the ICOMMP Studio and will be livestreamed in Facebook. </p>
+              </div>
+              <div class="card-footer"><a href="/schedule/" class="link"> Click for more details</a></div>
+            </div>
+
+          </div>
+          <div id="tab-3" class="page-content tab">
+
+            <div class="card">
+              <div class="card-header">Who are the committees involved in the Tapatan Debates?</div>
+              <div class="card-content card-content-padding"><p>The main comittees are iCOMMP, OSG, Comelec, Atenews and ADV.</p>
+              </div>
+              <div class="card-footer"><a href="/committees/" class="link"> Click for more details</a></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- END OF TABS-->
     </div>
+
+    <img src="img/tapatan.png" width="100%" height="200" class="center">
+
+
   </div>
   <!-- Path to Framework7 Library JS-->
   <script type="text/javascript" src="js/framework7.min.js"></script>

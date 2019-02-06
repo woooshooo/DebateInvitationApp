@@ -13,13 +13,13 @@
   <link rel="stylesheet" href="css/framework7.min.css">
 
   <style media="screen">
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      height: auto;
-    }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+  }
 
   </style>
 
@@ -28,7 +28,7 @@
   <!-- Your main view, should have "view-main" class -->
   <div class="view view-main">
     <!-- Initial Page, "data-name" contains page name -->
-    <div data-name="details" class="page color-theme-green">
+    <div data-name="details" class="page color-theme-green" style="background-color:#dbdbdb">
 
       <!-- Top Navbar -->
       <div class="navbar">
@@ -42,21 +42,41 @@
           <div class="title">Schedule</div>
         </div>
       </div>
-
-
-      <!-- Scrollable page content -->
-      <div class="page-content" style="background-color:#dbdbdb">
-        <!-- <div class="card">
-          <img src="img/tapatan.jpg" alt="Paris" class="center">
-        </div> -->
-
-        <div class="card">
-          <div class="card-content"><img id="schedule"src="img/schedule.png" width="100%"/></div>
-          <div class="card-footer"><a href="/schedulebreakdown/" class="link"> Click for more details</a></div>
+      <div class="toolbar tabbar">
+        <div class="toolbar-inner">
+          <a href="#tab-1" class="tab-link tab-link-active">WHEN</a>
+          <a href="#tab-2" class="tab-link">WHERE</a>
         </div>
-
-
       </div>
+      <!-- Scrollable page content -->
+      <div class="tabs-swipeable-wrap">
+        <div class="tabs">
+          <div id="tab-1" class="page-content tab tab-active">
+
+            <div class="card">
+              <div class="card-header"><img id="schedule"src="img/schedule.png" width="100%"/></div>
+              <!-- <div class="card-content"></div> -->
+              <div class="card-footer"><a href="/schedulebreakdown/" class="link"> Click for more details</a></div>
+            </div>
+
+          </div>
+          <div id="tab-2" class="page-content tab">
+
+            <div class="card">
+              <div class="card-header">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.7356791705581!2d125.61287587512084!3d7.071219837236165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f96d9c3dced7f3%3A0x6cf1c065de3a3d46!2sAteneo+de+Davao+University+Community+Center+of+the+First+Companions!5e0!3m2!1sen!2sph!4v1549482564235" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+              <!-- <div class="card-content"></div> -->
+              <div class="card-footer">
+                <p>3rd Floor Community Center First Companions, ICOMMP Office Studio</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- end of TABS -->
+
     </div>
   </div>
   <!-- Path to Framework7 Library JS-->
