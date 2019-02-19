@@ -171,7 +171,7 @@ var soloCan = app.photoBrowser.create({
   photos : [
   'assets/bahag_sea.jpg',
   'assets/piglas_humlet.jpg',
-  'assests/cs_ade.png'
+  'assets/cs_ade.png'
   ]
 })
 
