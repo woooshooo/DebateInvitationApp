@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#2196f3">
+  <!-- Your app title -->
+  <title>Tapatan Debates 2019</title>
+  <!-- Path to Framework7 Library CSS -->
+  <link rel="stylesheet" href="css/framework7.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+  <style media="screen">
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .video_contain {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+  }
+  /* Style the video: 100% width and height to cover the entire window */
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+  }
+
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 300px;
+    height: auto;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+
+    cursor: pointer;
+  }
+
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  p{
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  h1{
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  </style>
+
+</head>
+<body>
+  <!-- App root element -->
+  <div id="app">
+    <!-- Statusbar overlay -->
+    <div class="statusbar"></div>
+
+    <!-- Your main view, should have "view-main" class -->
+    <div class="view view-main">
+      <!-- Initial Page, "data-name" contains page name -->
+      <div data-name="home" class="page color-theme-white">
+
+        <!-- Top Navbar -->
+        <!-- <div class="navbar">
+        <div class="navbar-inner sliding">
+        <div class="title">Tapatan Debates 2019</div>
+      </div>
+    </div> -->
+
+    <!-- Scrollable page content -->
+    <div class="page-content " style="background-color:#dbdbdb;overflow: hidden;">
+      <!-- <img src="img/tapatan.png" alt="Paris" class="center">
+
+      <div class="card">
+      <div class="card-header">Event Invitation</div>
+      <div class="card-content card-content-padding"><p>You are invited to watch Tapatan Debates 2019</p>
+    </div>
+    <div class="card-footer"></div>
+  </div>
+-->
+
+<!-- The video -->
+<div class="video_contain">
+  <video autoplay muted loop id="myVideo"><source src="img/tapatan.mp4" type="video/mp4"></video>
+  </div>
+
+
+  <!-- Optional: some overlay text to describe the video -->
+  <div class="content">
+    <h1>Special Event Invitation</h1>
+    <p>You are invited to watch Tapatan Debates 2019</p>
+    <button class="button button-fill color-green button-outline button-round" id="myBtn" ><a href="/details/"> Click for more details</a></button>
+  </div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- Path to Framework7 Library JS-->
+<script type="text/javascript" src="js/framework7.min.js"></script>
+<!-- Path to your app js-->
+<script type="text/javascript" src="js/my-app.js"></script>
+
+<script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+</script>
+
+</body>
+</html>

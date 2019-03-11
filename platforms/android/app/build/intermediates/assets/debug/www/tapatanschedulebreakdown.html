@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#2196f3">
+  <!-- Your app title -->
+  <title>Tapatan Debates 2019</title>
+  <!-- Path to Framework7 Library CSS -->
+  <link rel="stylesheet" href="css/framework7.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+  <style media="screen">
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      height: auto;
+    }
+
+  </style>
+
+</head>
+<body>
+  <!-- Your main view, should have "view-main" class -->
+  <div class="view view-main">
+    <!-- Initial Page, "data-name" contains page name -->
+    <div data-name="details" class="page color-theme-green">
+
+      <!-- Top Navbar -->
+      <div class="navbar">
+        <div class="navbar-inner sliding">
+          <div class="left">
+            <a class="link back">
+              <i class="icon icon-back"></i>
+              <span class="ios-only">Back</span>
+            </a>
+          </div>
+          <div class="title">Schedule Breakdown</div>
+        </div>
+      </div>
+
+
+      <!-- Scrollable page content -->
+      <div class="page-content" style="background-color:#dbdbdb">
+        <img src="img/tapatan.png" alt="Paris" class="center">
+
+
+        <div class="list media-list card">
+          <ul>
+            <div class="block"><br>February 8</div>
+            <li>
+              <a href="#" class="item-link item-content" onclick="openpbAcc()">
+                <div class="item-media"><img src="img/acc.jpg" width="44"/></div>
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">Accountancy</div>
+                  </div>
+                  <div class="item-subtitle">9:00PM</div>
+                </div>
+              </a>
+            </li>
+            <div class="block">February 9</div>
+            <li>
+              <a href="#" class="item-link item-content" onclick="openSoloCan()">
+                <div class="item-media"><img src="img/seacshumlet.png" width="44"/></div>
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">SEA, CS, and HUMLET</div>
+                  </div>
+                  <div class="item-subtitle">9:00AM</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-link item-content" onclick="openpbSon()">
+                <div class="item-media"><img src="img/son.png" width="44"/></div>
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">School of Nursing</div>
+                  </div>
+                  <div class="item-subtitle">11:00AM</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-link item-content" onclick="openSoloCanTwo()">
+                <div class="item-media"><img src="img/sssoebm.png" width="44"/></div>
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">SS, SOE, BM</div>
+                  </div>
+                  <div class="item-subtitle">1:00PM</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="item-link item-content">
+                <div class="item-media"><img src="img/osg.png" width="44"/></div>
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">Treasurer</div>
+                  </div>
+                  <div class="item-subtitle">3:00PM</div>
+                </div>
+              </a>
+            </li>
+            <div class="block">February 11</div>
+            <li>
+              <a href="#" class="item-link item-content" onclick="openpbSecgen()">
+
+                <div class="item-media"><img src="img/osg.png" width="44"/></div>
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">Secretary General</div>
+                  </div>
+                  <div class="item-subtitle">9:00PM</div>
+                </div>
+
+              </a>
+            </li>
+            <div class="block">February 12</div>
+            <li>
+              <a href="#" class="item-link item-content" onclick="openpbPres()">
+
+                <div class="item-media"><img src="img/osg.png" width="44"/></div>
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">President</div>
+                  </div>
+                  <div class="item-subtitle">9:00PM</div>
+                </div>
+
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <!-- Path to Framework7 Library JS-->
+  <script type="text/javascript" src="js/framework7.min.js"></script>
+  <!-- Path to your app js-->
+  <script type="text/javascript" src="js/my-app.js"></script>
+
+</body>
+</html>
